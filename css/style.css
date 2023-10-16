@@ -1,0 +1,331 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: roboto condensed;
+}
+
+h1{
+    font-size: 4.5em;
+    font-family: young-serif;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: roboto condensed;
+    font-weight: 300;
+    font-size: 3em;
+    margin-top: 0;
+}
+
+h4{
+    font-family: roboto condensed;
+    font-weight: 100;
+    font-size: 1.7em; 
+    line-height: 1.4;
+}
+
+p{
+    font-family: roboto condensed;
+    font-weight: 100;
+    font-size: 16px; 
+}
+
+/*top nav*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 8%;
+}
+
+.navbar_book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 8%;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar_logo img{
+    width: 350px;
+}
+
+.navbar_right{
+    display: flex;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li{
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+.navbar_menu li a:hover{
+    color: #00A37A;
+}
+
+.navbar_icons{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    padding-left: 0;
+    margin-left: 30px;
+}
+
+.navbar_icons li{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.navbar_icons li img{
+    width: 28px;
+}
+
+.navbar_toggleBtn{
+    position: absolute;
+    right: 32px;
+    top: 34px;
+    font-size: 24px;
+    color: #00A37A;
+    display: none;
+}
+
+.navbar_toggleBtn img{
+    width: 26px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        background: #000;
+    }
+
+    .navbar_book{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        background: #000;
+    }
+
+    .navbar_right{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_logo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar_toggleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active, .navbar_icons.active{
+        display: flex;
+    }
+}
+    
+/*top nav*/
+header{
+    background-image: url(../img/alwaysdreamink_tattoobw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+
+}
+
+.header_banner{
+    background-position: left bottom;
+    padding: 2% 8% 10% 8%;
+    height: 500px;
+}
+
+.title_left{
+    width: 100%;
+    color: #fff;
+}
+
+.title_right{
+    width: 100%;
+}
+
+.btn{
+    margin-top: 8%;
+}
+
+.btn1{
+    border: solid 1px #00A37A;
+    padding: 20px 30px 20px 30px;
+    color: #00A37A;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 22px;
+}
+
+.btn2{
+    background-color: #00A37A;
+    padding: 20px 40px 20px 40px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn1:hover{
+    border: solid 1px #fff;
+    background-color: #fff;
+    color: #00A37A;
+}
+
+.btn2:hover{
+    background-color: #fff;
+    padding: 20px 40px 20px 40px;
+    color: #00A37A;
+}
+
+/*main*/
+/*intro*/
+main{
+    padding: 2% 8%;
+}
+.artist_contact{
+    display: flex;
+    width: 100%;
+    margin-top: 6%;
+}
+
+.artist_pic{
+    width: 60%;
+}
+
+.artist_intro{
+    right: 0;
+    width: 100%;
+}
+
+/*intro*/
+
+/*instagram*/
+.social_widget{
+    margin-top: 100px;
+}
+
+.social_widget h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.eapps-instagram-feed-header-inner{
+    display: none;
+}
+/*instagram*/
+
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 8%;
+    background: #000;
+}
+
+.footer_logo img{
+    width: 320px;
+}
+
+.footer_slogan{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    color: #00A37A;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .4em;
+}
+
+.footer_icons{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    padding-left: 0;
+}
+
+.footer_icons li{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.footer_icons li img{
+    width: 28px;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        background: #000;
+    }
+
+    .footer_slogan{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer_logo{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer_icons{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/*footer*/
+
+/*main*/
