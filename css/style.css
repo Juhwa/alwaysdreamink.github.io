@@ -229,13 +229,14 @@ main{
     padding: 2% 8%;
 }
 .artist_contact{
-    display: flex;
+    /*display: flex;*/
     width: 100%;
     margin-top: 6%;
+    text-align: center;
 }
 
 .artist_pic{
-    width: 60%;
+    width: 40%;
 }
 
 .artist_intro{
