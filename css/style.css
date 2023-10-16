@@ -106,7 +106,7 @@ a{
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .navbar{
         flex-direction: column;
         align-items: flex-start;
@@ -162,16 +162,46 @@ a{
     
 /*top nav*/
 header{
-    background-image: url(../img/alwaysdreamink_tattoobw.jpg);
-    background-repeat: no-repeat;
+    /*background-image: url(../img/alwaysdreamink_tattoobw.jpg);*/
+    background-repeat: no-repeat;  
+    background-position: left bottom;
     background-size: cover;
     background-position: left bottom;
 
 }
 
+.vidbg-container{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
+    background-color: #000;
+
+}
+
+@media (min-aspect-ratio: 16/9){
+    .background-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .background-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
 .header_banner{
-    background-position: left bottom;
-    padding: 2% 8% 10% 8%;
+    padding: 3% 8% 10% 8%;
     height: 500px;
 }
 
@@ -302,7 +332,7 @@ footer{
     width: 28px;
 }
 
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     footer{
         flex-direction: column;
         align-items: flex-start;
