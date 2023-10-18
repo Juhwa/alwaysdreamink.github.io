@@ -8,6 +8,7 @@ h1{
     font-size: 4.5em;
     font-family: 'Abhaya Libre', serif;
     margin-bottom: 10px;
+    line-height: 1;
 }
 
 h3{
@@ -86,8 +87,7 @@ a{
 .navbar_icons3{
     list-style: none;
     display: flex;
-    margin-left: 0;
-    /*margin-left: 50px;*/
+    margin-left: -30px;
 }
 
 .navbar_icons li, .navbar_icons3 li{
@@ -478,6 +478,7 @@ footer{
         flex-direction: column;
         align-items: center;
         width: 100%;
+        letter-spacing: 0;
     }
 
     .footer_logo{
