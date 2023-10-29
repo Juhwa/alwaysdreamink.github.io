@@ -225,7 +225,60 @@ header{
     width: 200px;
 }
 
+/*main form*/
+.tattoo_form{
+    background-image: url(../img/bg_tattoo_form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    margin-top: -10%;
+    padding: 5% 8% 5% 8%;
+}
+
+.form1{
+    width: 100%;
+}
+
+.tattoo_form > .form1 > h2{
+    font-weight: 300;
+    font-size: 56px;
+    color: #00A37A;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.tattoo_form > .form1 > p{
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
+.tattoo_contact{
+    width: 100%;
+    padding: 0 10% 0 10%;
+}
+
+.form-label-top{
+    color: #fff;
+}
+
+/*main form*/
+
 @media only screen and (max-width: 768px){
+    .tattoo_form{
+        display: block;
+        margin-top: 30%;
+    }
+
+    .form1{
+        width: 85%;
+    }    
+
+    .tattoo_contact{
+        width: 85%;
+        padding: 0 0 10% 0;
+    }
+
     .contactinfo{
         display: block;
         margin-top: 50px;
@@ -305,7 +358,7 @@ header{
 
 .header_banner{
     padding: 3% 8% 10% 8%;
-    height: 500px;
+    height: 520px;
 }
 
 .header_bannerc{
