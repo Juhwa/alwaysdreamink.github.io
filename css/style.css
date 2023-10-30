@@ -230,6 +230,7 @@ header{
     background-image: url(../img/bg_tattoo_form.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     width: 100%;
     display: flex;
     margin-top: -10%;
